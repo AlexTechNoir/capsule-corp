@@ -26,7 +26,7 @@ const GlobalStyle = css`
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    height: 100%;
+    min-height: 100%;
     background-image: linear-gradient(#D67F91, #C5C44E);
     font-family: 'Plus Jakarta Sans';
   }
@@ -57,5 +57,5 @@ const DivGrid = styled.div`
   background-repeat: no-repeat;
   background-size: 1000px;
   background-position: top 90px right 0;
-  background-attachment: fixed;
+  background-attachment: local;
 `

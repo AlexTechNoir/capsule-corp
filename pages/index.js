@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import styled from '@emotion/styled'
+import Hero from '../components/Hero'
+import Inventions from '../components/Inventions'
 
 export default function Home() {
   return (
@@ -10,15 +12,8 @@ export default function Home() {
       </Head>
 
       <Main>
-        <section>
-          <div>Capsules!<br /> Robotics!<br /> Time travel!</div>
-          <hr />
-          <div>We stand on the edge of science</div>
-          <div>
-            <button>Invest now!</button>
-            <img src="/img/zeni.png" alt="" width="48" height="48" />
-          </div>
-        </section>
+        <Hero />
+        <Inventions />
       </Main>
     </>
   )
@@ -26,55 +21,9 @@ export default function Home() {
 
 const Main = styled.main`
   padding: 1em;
-  grid-area: 2 / 2 / 3 / 4;
+  grid-area: 2 / 1 / 3 / 4;
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 600px 600px 1fr;
   position: relative;
-  > section {
-    grid-area: 1 / 1 / 2 / 2;
-    font-weight: 600;
-    color: #373737;
-    > :first-child {
-      font-size: 6rem;
-    }
-    > hr {
-      border: 0; 
-      border-top: 2px solid #373737;
-      margin: 1em 0 1em 0;
-    }
-    > :nth-child(3) {
-      font-size: 1.5rem;
-      margin-bottom: 1em;
-    }
-    > :nth-child(4) {
-      position: relative;
-      > button {
-        position: relative;
-        margin: 1em 1em 1em 0;
-        padding: 0.8rem 2rem;
-        font-weight: 600;
-        background-color: #3C9EF4;
-        border: none;
-        border-radius: 0.3rem;
-        font-size: 1.25rem;
-        cursor: pointer;
-        color: white;
-        z-index: 2;
-        &:hover {
-          background-color: #307ec3;
-        }
-        &:hover + img {          
-          left: 160px;
-          bottom: 50px;
-        }
-      }
-      > img {
-        transition: left .4s, bottom .4s;
-        position: absolute;
-        left: 125px;
-        bottom: 20px;  
-      }
-    }
-  }
 `
