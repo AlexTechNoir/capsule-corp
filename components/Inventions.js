@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 export default function Inventions() {
   return (
     <ProjectsSection>
-      <h1>Our inventions 🚀</h1>
+      <h1>💡 Our inventions 🚀</h1>
 
       <div>
         <div>
@@ -48,7 +48,6 @@ const ProjectsSection = styled.section`
     grid-area: 1 / 1 / 2 / 2;
     font-weight: 600;
     font-size: 4rem;
-    color: #373737;
     justify-self: center;
     margin-bottom: 1.5em;
   }

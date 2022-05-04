@@ -53,7 +53,7 @@ const DivGrid = styled.div`
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr 1200px 1fr;
   height: 100%;
-  background-image: url('/img/Layer-1.png');
+  background-image: url('/img/capsule-corp.png');
   background-repeat: no-repeat;
   background-size: 1000px;
   background-position: top 90px right 0;
