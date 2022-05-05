@@ -17,7 +17,6 @@ export default function Hero() {
 const HeroSection = styled.section`
   grid-area: 1 / 2 / 2 / 3;
   font-weight: 600;
-  margin-bottom: 1em;
   > :first-child {
     font-size: 6rem;
   }
