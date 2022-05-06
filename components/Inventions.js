@@ -8,7 +8,7 @@ export default function Inventions() {
       <div>
         <div>
           <h2>Hoi-Poi Capsules</h2>
-          <p>Legendary Hoi-Poi Capsules made a revolution back in the days, especially for travelling industry. People can store almost everything - from favourite meal to a real house!</p>
+          <p>Legendary Hoi-Poi Capsules made a revolution back in the days, especially for travelling industry. People can store almost everything - from favourite meal 🍜 to a real house 🏠!</p>
         </div>
         <div>
           <img src="/img/capsules.png" alt="hoi-poi capsules" />
@@ -21,14 +21,14 @@ export default function Inventions() {
         </div>
         <div>
           <h2>Interstellar Spaceships</h2>
-          <p>Have you ever travelled to a planet called Namek? Well, now you can!</p>
+          <p>Remember &#34;little green men&#34;? We found them! And not only them! Currently Capsule Corp. is organising trips to 36 planets outside of our Solar System within our Universe (that&prime;s right, our Universe is not the only one!) 🌌</p>
         </div>
       </div>
 
       <div>
         <div>
           <h2>Time Machine</h2>
-          <p>Wanna travel back to 80-s? Or how about 100 years into the future? We got it all!</p>
+          <p>Scientists have always been saying that time travel is impossible. Luckily scientists of Capsule Corp. are open to defy any laws of physics and time! Jorneys back and forth in timeline are avaliable to anyone for a reasonable price. No touching or interacting allowed. ☝️</p>
         </div>
         <div>
           <img src="/img/time-machine.png" alt="time machine" />
@@ -55,6 +55,8 @@ const ProjectsSection = styled.section`
     grid-area: 2 / 1 / 3 / 2;
     width: 100%;
     display: flex;
+    margin-bottom: 2em;
+    column-gap: 2em;
     > :first-child {
       width: 50%;
       display: flex;
@@ -67,6 +69,7 @@ const ProjectsSection = styled.section`
       > p {
         font-size: 1.5rem;
         text-align: center;
+        line-height: 1.5;
       }
     }
     > :nth-child(2) {
@@ -80,6 +83,7 @@ const ProjectsSection = styled.section`
     grid-area: 3 / 1 / 4 / 2;
     width: 100%;
     display: flex;
+    column-gap: 2em;
     > :first-child {
       width: 50%;
       display: flex;
@@ -98,6 +102,7 @@ const ProjectsSection = styled.section`
       > p {
         font-size: 1.5rem;
         text-align: center;
+        line-height: 1.5;
       }
     }
   }
@@ -105,6 +110,7 @@ const ProjectsSection = styled.section`
     grid-area: 4 / 1 / 5 / 2;
     width: 100%;
     display: flex;
+    column-gap: 2em;
     > :first-child {
       width: 50%;
       display: flex;
@@ -117,6 +123,7 @@ const ProjectsSection = styled.section`
       > p {
         font-size: 1.5rem;
         text-align: center;
+        line-height: 1.5;
       }
     }
     > :nth-child(2) {

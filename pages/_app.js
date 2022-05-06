@@ -1,6 +1,7 @@
 import { Global, css } from '@emotion/react'
 import styled from '@emotion/styled'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -9,6 +10,7 @@ export default function MyApp({ Component, pageProps }) {
       <DivGrid>
         <Header />
         <Component {...pageProps} />
+        <Footer />
       </DivGrid>
     </>
   ) 
@@ -17,6 +19,7 @@ export default function MyApp({ Component, pageProps }) {
 const GlobalStyle = css`
   * {
     box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans';
   }
   html {
     font-size: 1rem;
@@ -28,7 +31,6 @@ const GlobalStyle = css`
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     min-height: 100%;
     background-image: linear-gradient(#D67F91, #C5C44E);
-    font-family: 'Plus Jakarta Sans';
   }
   #__next {
     height: 100%;

@@ -19,6 +19,7 @@ const InvestSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 5em;
   > div {
     position: relative;
     > button {
@@ -58,5 +59,8 @@ const InvestSection = styled.section`
       transition: transform .4s;
       transform: rotate(19deg);
     }
+  }
+  > img {
+    margin-left: 5em;
   }
 `

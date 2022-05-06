@@ -24,10 +24,10 @@ export default function Home() {
 }
 
 const Main = styled.main`
-  padding: 1em;
+  margin-top: 1em;
   grid-area: 2 / 1 / 3 / 4;
   display: grid;
-  grid-template-rows: auto auto auto 400px;
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: 1fr 600px 600px 1fr;
   position: relative;
   row-gap: 2em;
