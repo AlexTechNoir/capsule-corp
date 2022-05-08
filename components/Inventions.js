@@ -8,7 +8,7 @@ export default function Inventions() {
       <div>
         <div>
           <h2>Hoi-Poi Capsules</h2>
-          <p>Legendary Hoi-Poi Capsules made a revolution back in the days, especially for travelling industry. People can store almost everything - from favourite meal 🍜 to a real house 🏠!</p>
+          <p>Legendary Hoi-Poi Capsules made a revolution back in the days, especially for travelling industry. People can store almost everything in them - from favourite meal 🍜 to a real house 🏠!</p>
         </div>
         <div>
           <img src="/img/capsules.png" alt="hoi-poi capsules" />
@@ -28,7 +28,7 @@ export default function Inventions() {
       <div>
         <div>
           <h2>Time Machine</h2>
-          <p>Scientists have always been saying that time travel is impossible. Luckily scientists of Capsule Corp. are open to defy any laws of physics and time! Jorneys back and forth in timeline are avaliable to anyone for a reasonable price. No touching or interacting allowed. ☝️</p>
+          <p>Scientists have always been saying that time travel is impossible. Luckily scientists of Capsule Corp. are open to defy any laws of physics and time! Jorneys back and forth in timeline are avaliable to anyone for a reasonable price. No touching or interacting with anything allowed. ☝️</p>
         </div>
         <div>
           <img src="/img/time-machine.png" alt="time machine" />
