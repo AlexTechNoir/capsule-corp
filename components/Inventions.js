@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 export default function Inventions() {
   return (
     <ProjectsSection>
-      <h1>💡 Our inventions 🚀</h1>
+      <h1 id="inventions">💡 Our inventions 🚀</h1>
 
       <div>
         <div>

@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 export default function Team() {
   return (
     <StaffSection>
-      <h1>👩‍🔧 Meet our team! 👨‍🔧</h1>
+      <h1 id="team">👩‍🔧 Meet our team! 👨‍🔧</h1>
       <div>
         <h2>Dr. Brief</h2>
         <h3>President of Capsule Corp.</h3>

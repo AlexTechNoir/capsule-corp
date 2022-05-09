@@ -58,6 +58,6 @@ const DivGrid = styled.div`
   background-image: url('/img/capsule-corp.png');
   background-repeat: no-repeat;
   background-size: 1000px;
-  background-position: top 90px right 0;
+  background-position: top 130px right 0;
   background-attachment: local;
 `
