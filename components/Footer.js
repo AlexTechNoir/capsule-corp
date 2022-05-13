@@ -4,9 +4,9 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <StyledFooter>
-      <div>
-        <div>Capsule Corporation LLC</div>
-        <ul>
+      <div className="gridWrapper">
+        <div className="footerTitle">Capsule Corporation LLC</div>
+        <ul className="allLists firstList">
           <li>
             <Link href="/" passHref>
               <a>Invest in company</a>
@@ -28,7 +28,7 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
-        <ul>
+        <ul className="allLists secondList">
           <li>
             <Link href="/" passHref>
               <a>Gadgets repair</a>
@@ -50,7 +50,7 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
-        <ul>
+        <ul className="allLists thirdList">
           <li>
             <Link href="/" passHref>
               <a>We are hiring!</a>
@@ -63,7 +63,7 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
-        <div>
+        <div className="socialNetworks">
           <Link href="https://www.facebook.com/DragonBallZ/" passHref>
             <a>
               <img src="/icons/facebook.svg" alt="facebook" width="32" />
@@ -71,7 +71,7 @@ export default function Footer() {
             </a>
           </Link>
           <Link href="https://twitter.com/dragonballz" passHref>
-            <a>
+            <a className="twitter">
               <img src="/icons/twitter.svg" alt="twitter" width="32" />
               <span>Twitter</span>
             </a>
@@ -83,13 +83,13 @@ export default function Footer() {
             </a>
           </Link>
           <Link href="/" passHref>
-            <a>
+            <a className="productHunt">
               <img src="/icons/product-hunt.svg" alt="product hunt" width="32" />
               <span>Product Hunt</span>
             </a>
           </Link>
           <Link href="/" passHref>
-            <a>
+            <a className="discord">
               <img src="/icons/discord.svg" alt="discord" width="32" />
               <span>Discord</span>
             </a>
@@ -107,18 +107,18 @@ const StyledFooter = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
-  > div {
+  > .gridWrapper {
     width: 100%;
     max-width: 1200px;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 300px 300px 300px 300px;
-    > div {
+    > .footerTitle {
       font-weight: bold;
       grid-area: 1 / 1 / 2 / 5;
       justify-self: center;
     }
-    > ul {
+    > .allLists {
       list-style-type: none;
       padding-left: 0;
       > li {
@@ -131,10 +131,11 @@ const StyledFooter = styled.footer`
         }
       } 
     }
-    > :last-child {
+    > .socialNetworks {
       grid-area: 2 / 4 / 3 / 5;
       padding: 1em;
       justify-self: start;
+      padding-left: 0;
       > a {
         margin-right: 1em;
         position: relative;
@@ -173,14 +174,70 @@ const StyledFooter = styled.footer`
           opacity: 1;
         }
       }
-      > :nth-child(2) > span {
+      > .twitter > span {
         left: -25px;
       }
-      > :nth-child(4) > span {
+      > .productHunt > span {
         left: -50px;
       }
-      > :nth-child(5) > span {
-        left: -29px;
+      > .discord {
+        margin-right: 0;
+        > span {
+          left: -29px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1216px) {
+    grid-area: 3 / 1 / 4 / 2;
+    > .gridWrapper {
+      grid-template-rows: auto auto auto;
+      grid-template-columns: 300px 300px;
+      justify-content: center;
+      > .footerTitle {
+        grid-area: 1 / 1 / 2 / 3;
+      }
+      > .firstList {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      > .secondList {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+      > .thirdList {
+        grid-area: 3 / 1 / 4 / 2;
+      }
+      > .socialNetworks {
+        grid-area: 3 / 2 / 4 / 3;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 632px) {
+    > .gridWrapper {
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-columns: 100%;
+      > .footerTitle {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      > .allLists {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      > .firstList {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      > .secondList {
+        grid-area: 3 / 1 / 4 / 2;
+      }
+      > .thirdList {
+        grid-area: 4 / 1 / 5 / 2;
+      }
+      > .socialNetworks {
+        grid-area: 5 / 1 / 6 / 2;
+        justify-self: center;
+        padding-left: 1em;
       }
     }
   }

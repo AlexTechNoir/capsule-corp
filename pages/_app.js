@@ -21,9 +21,7 @@ const GlobalStyle = css`
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans';
   }
-  html {
-    font-size: 1rem;
-  }
+
   html, body {
     padding: 0;
     margin: 0;
@@ -60,4 +58,107 @@ const DivGrid = styled.div`
   background-size: 1000px;
   background-position: top 130px right 0;
   background-attachment: local;
+
+  @media only screen and (max-width: 1760px) {
+    background-position: top 130px right -150px;
+  }
+
+  @media only screen and (max-width: 1480px) {
+    background-position: top 130px right -250px;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    background-position: top 130px right -400px;
+  }
+
+  @media only screen and (max-width: 1216px) {
+    grid-template-columns: 100%;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    background-position: top 130px right -500px;
+  }
+
+  @media only screen and (max-width: 856px) {
+    background-position: top 130px right -600px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    background-position: top 10px right -600px;
+  }
+
+  @media only screen and (max-width: 670px) {
+    background-position: top 10px right -655px;
+  }
+
+  @media only screen and (max-width: 670px) {
+    background-position: top -50px right -655px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    background-image: 
+      url('/img/white-blue-caps.png'), 
+      url('/img/white-pur-caps.png'),
+      url('/img/white-red-caps.png'),
+      url('/img/bronze-blue-caps.png'),
+      url('/img/bronze-pur-caps.png'),
+      url('/img/bronze-red-caps.png'),
+      url('/img/gold-pur-caps.png'),
+      url('/img/gold-red-caps.png');
+    background-attachment: local, local, local, local, local, local, local, local;
+    background-size: 
+      100px, 
+      107px,
+      100px,
+      111px,
+      51px,
+      91px,
+      58px,
+      107px;
+    background-position: 
+      305px 60px, 
+      460px 345px,
+      435px 7px,
+      140px 20px,
+      334px 331px,
+      180px 180px,
+      262px 173px,
+      390px 185px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    background-position: 
+      305px 60px, 
+      460px 345px,
+      380px 155px,
+      140px 20px,
+      334px 331px,
+      180px 180px,
+      262px 173px,
+      390px 0;
+  }
+
+  @media only screen and (max-width: 375px) {
+    background-position: 
+      280px 15px, 
+      460px 345px,
+      380px 155px,
+      140px 20px,
+      295px 440px,
+      180px 180px,
+      262px 173px,
+      200px 390px;
+  }
+
+  @media only screen and (max-width: 320px) {
+    background-position: 
+      280px 15px, 
+      460px 345px,
+      380px 155px,
+      140px 20px,
+      250px 440px,
+      180px 180px,
+      262px 173px,
+      200px 390px;
+  }
 `

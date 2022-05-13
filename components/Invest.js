@@ -5,10 +5,10 @@ export default function Invest() {
     <InvestSection>
       <div>
         <button>Invest now!</button>
-        <img src="/img/zeni.png" alt="" width="48" height="48" />
-        <img src="/img/tama.png" alt="" width="48" height="48" />
+        <img src="/img/zeni.png" alt="" width="48" height="48" className="zeniImg" />
+        <img src="/img/tama.png" alt="" width="48" height="48" className="tamaImg" />
       </div>
-      <img src="/img/bulma-jumping.png" alt="bulma jumping" height="250" />
+      <img src="/img/bulma-jumping.png" alt="bulma jumping" height="250" loading="lazy" />
     </InvestSection>
   )
 }
@@ -37,21 +37,21 @@ const InvestSection = styled.section`
       &:hover {
         background-color: #307ec3;
       }
-      &:hover + :nth-child(2) {
+      &:hover + .zeniImg {
         left: 160px;
         bottom: 50px;
       }
-      &:hover ~ :nth-child(3) {          
+      &:hover ~ .tamaImg {          
         transform: rotate(5deg);
       }
     }
-    > :nth-child(2) {
+    > .zeniImg {
       transition: left .4s, bottom .4s;
       position: absolute;
-      left: 125px;
+      left: 124px;
       bottom: 20px;  
     }
-    > :nth-child(3) {
+    > .tamaImg {
       position: absolute;
       left: 56px;
       top: -14px;

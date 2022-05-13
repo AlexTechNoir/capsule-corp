@@ -7,7 +7,7 @@ export default function Header() {
     <StyledHeader>
       <Link href="/" passHref>
         <a>
-          <img src="/logo-200.png" alt="capsule corporation logo" width="200" height="227" />
+          <img src="/logo-200.png" alt="capsule corporation logo" />
         </a>
       </Link>
       <nav>
@@ -52,8 +52,9 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 150px;
   > a {
-    margin-left: 1em;    
+    margin-left: 1em;
     > img {
       width: 100px;
       height: 100%;
@@ -90,6 +91,23 @@ const StyledHeader = styled.header`
     }
     > :nth-child(2) > img {
       left: -47px;
+    }
+  }
+
+  @media only screen and (max-width: 1216px) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    height: 100px;
+    > a {
+      margin-left: 0;
+      > img {
+        width: 50px;
+      }
+    }
+    > nav {
+      display: none;
     }
   }
 `
