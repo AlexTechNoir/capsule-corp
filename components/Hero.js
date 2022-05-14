@@ -1,22 +1,35 @@
 import styled from '@emotion/styled'
 import { keyframes } from '@emotion/react'
+import { useEffect, useState } from 'react'
 
 export default function Hero() {
+  const [ areElementsHidden, setAreElementsHidden ] = useState(true)
+
+  useEffect(() => {
+    setAreElementsHidden(false)
+  },[])
+
   return (
     <HeroSection>
-      <div>
-        <div>
-          Capsules!
-        </div>
-        <div>
-          Space!
-        </div> 
-        <div>
-          Time travel!
-        </div>
-      </div>
-      <hr />
-      <div>We stand on the edge of science</div>
+      {
+        !areElementsHidden ? (
+          <>
+            <div>
+              <div>
+                Capsules!
+              </div>
+              <div>
+                Space!
+              </div> 
+              <div>
+                Time travel!
+              </div>
+            </div>
+            <hr />
+            <div>We stand on the edge of science</div>
+          </>
+        ) : null
+      }
       <div className="buttons">
         <div className="firstButtonWrapper">
           <button>Invest now!</button>
