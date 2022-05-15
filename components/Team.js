@@ -10,14 +10,14 @@ export default function Team() {
           <h3>President of Capsule Corp.</h3>
           <picture>
             <source
-              src="/img/dr-brief.webp"
+              srcSet="/img/dr-brief.webp"
               type="image/webp"
             />
             <source
-              src="/img/dr-brief.jpg"
+              srcSet="/img/dr-brief.jpg"
               type="image/jpeg"
             />
-            <img src="/img/dr-brief.webp" alt="doctor brief" width="200" loading="lazy" />
+            <img src="/img/dr-brief.webp" alt="doctor brief" width="200" height="200" loading="lazy" />
           </picture>
           <p>&#34;My inventions are my babies!&#34;</p>
         </div>
@@ -26,14 +26,14 @@ export default function Team() {
           <h3>Chief Technical Officer</h3>
           <picture>
             <source
-              src="/img/bulma.webp"
+              srcSet="/img/bulma.webp"
               type="image/webp"
             />
             <source
-              src="/img/bulma.jpg"
+              srcSet="/img/bulma.jpg"
               type="image/jpeg"
             />
-            <img src="/img/bulma.webp" alt="bulma" width="200" loading="lazy" />
+            <img src="/img/bulma.webp" alt="bulma" width="200" height="200" loading="lazy" />
           </picture>
           <p>&#34;I&prime;ve been inventing since my teens!&#34;</p>
         </div>
@@ -42,14 +42,14 @@ export default function Team() {
           <h3>Test Volunteer</h3>
           <picture>
             <source
-              src="/img/trunks.webp"
+              srcSet="/img/trunks.webp"
               type="image/webp"
             />
             <source
-              src="/img/trunks.jpg"
+              srcSet="/img/trunks.jpg"
               type="image/jpeg"
             />
-            <img src="/img/trunks.webp" alt="trunks" width="200" loading="lazy" />
+            <img src="/img/trunks.webp" alt="trunks" width="200" height="200" loading="lazy" />
           </picture>
           <p>&#34;You won&prime;t believe the places and times I&prime;ve been in!&#34;</p>
         </div>
@@ -58,14 +58,14 @@ export default function Team() {
           <h3>Secretary</h3>
           <picture>
             <source
-              src="/img/staff.webp"
+              srcSet="/img/staff.webp"
               type="image/webp"
             />
             <source
-              src="/img/staff.jpg"
+              srcSet="/img/staff.jpg"
               type="image/jpeg"
             />
-            <img src="/img/staff.webp" alt="staff" width="200" loading="lazy" />
+            <img src="/img/staff.webp" alt="staff" width="200" height="200" loading="lazy" />
           </picture>
           <p>&#34;Call us even from a different timeline!&#34;</p>
         </div>
@@ -74,14 +74,14 @@ export default function Team() {
           <h3>Drink Service</h3>
           <picture>
             <source
-              src="/img/bikini.webp"
+              srcSet="/img/bikini.webp"
               type="image/webp"
             />
             <source
-              src="/img/bikini.jpg"
+              srcSet="/img/bikini.jpg"
               type="image/jpeg"
             />
-            <img src="/img/bikini.webp" alt="bikini" width="200" loading="lazy" />
+            <img src="/img/bikini.webp" alt="bikini" width="200" height="200" loading="lazy" />
           </picture>
           <p>&#34;You wanna lemon in your tea, dear?&#34;</p>
         </div>
@@ -90,14 +90,14 @@ export default function Team() {
           <h3>Chief Security Officer</h3>
           <picture>
             <source
-              src="/img/vegeta.webp"
+              srcSet="/img/vegeta.webp"
               type="image/webp"
             />
             <source
-              src="/img/vegeta.jpg"
+              srcSet="/img/vegeta.jpg"
               type="image/jpeg"
             />
-            <img src="/img/vegeta.webp" alt="vegeta" width="200" loading="lazy" />
+            <img src="/img/vegeta.webp" alt="vegeta" width="200" height="200" loading="lazy" />
           </picture>
           <p>&#34;I haven&prime;t signed up for this!&#34;</p>
         </div>

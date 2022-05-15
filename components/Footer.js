@@ -90,7 +90,7 @@ export default function Footer() {
           </Link>
           <Link href="/" passHref>
             <a className="discord">
-              <img src="/icons/discord.svg" alt="discord" width="32" />
+              <img src="/icons/discord.svg" alt="discord" width="32" height="32" />
               <span>Discord</span>
             </a>
           </Link>

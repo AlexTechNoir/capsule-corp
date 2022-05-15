@@ -8,7 +8,7 @@ export default function Invest() {
         <img src="/img/zeni.png" alt="" width="48" height="48" className="zeniImg" />
         <img src="/img/tama.png" alt="" width="48" height="48" className="tamaImg" />
       </div>
-      <img src="/img/bulma-jumping.png" alt="bulma jumping" height="250" loading="lazy" />
+      <img src="/img/bulma-jumping.png" alt="bulma jumping" width="140" height="250" loading="lazy" />
     </InvestSection>
   )
 }
