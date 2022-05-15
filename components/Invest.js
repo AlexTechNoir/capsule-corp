@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 export default function Invest() {
   return (
     <InvestSection>
-      <div>
+      <div className="buttonWrapper">
         <button>Invest now!</button>
         <img src="/img/zeni.png" alt="" width="48" height="48" className="zeniImg" />
         <img src="/img/tama.png" alt="" width="48" height="48" className="tamaImg" />
@@ -20,7 +20,7 @@ const InvestSection = styled.section`
   justify-content: center;
   align-items: center;
   margin-top: 5em;
-  > div {
+  > .buttonWrapper {
     position: relative;
     > button {
       position: relative;

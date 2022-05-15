@@ -148,13 +148,11 @@ const StyledFooter = styled.footer`
           border-radius: 5px;
           white-space: nowrap;
 
-          /* Position the tooltip text */
           position: absolute;
           z-index: 1;
           bottom: 42px;
           left: -38px;
 
-          /* Fade in tooltip */
           opacity: 0;
           transition: opacity 0.3s;
 

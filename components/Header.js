@@ -6,19 +6,19 @@ export default function Header() {
   return (
     <StyledHeader>
       <Link href="/" passHref>
-        <a>
+        <a className="logoLink">
           <img src="/logo.png" alt="capsule corporation logo" />
         </a>
       </Link>
       <nav>
         <Link href="#inventions" passHref>
-          <a>
+          <a className="allNavLinks">
             <span>Inventions</span>
             <img src="/img/bronze-capsule.png" alt="" width="150" />
           </a>
         </Link>
         <Link href="#team" passHref>
-          <a>
+          <a className="allNavLinks secondNavLink">
             <span>Team</span>
             <img src="/img/silver-capsule.png" alt="" width="150" />
           </a>
@@ -53,7 +53,7 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   height: 150px;
-  > a {
+  > .logoLink {
     margin-left: 1em;
     > img {
       width: 100px;
@@ -68,7 +68,7 @@ const StyledHeader = styled.header`
     column-gap: 10em;
     overflow: hidden;
     width: 446px;
-    > a {
+    > .allNavLinks {
       text-decoration: none;
       position: relative;
       color: white;
@@ -89,7 +89,7 @@ const StyledHeader = styled.header`
         animation: ${shake} .5s;
       }
     }
-    > :nth-child(2) > img {
+    > .secondNavLink > img {
       left: -47px;
     }
   }
@@ -100,7 +100,7 @@ const StyledHeader = styled.header`
   
   @media only screen and (max-width: 768px) {
     height: 100px;
-    > a {
+    > .logoLink {
       margin-left: 0;
       > img {
         width: 50px;
