@@ -27,7 +27,7 @@ const InvestSection = styled.section`
       margin: 1em 0 1em 0;
       padding: 0.8rem 2rem;
       font-weight: 600;
-      background-color: #3C9EF4;
+      background-color: #0073FF;
       border: none;
       border-radius: 0.3rem;
       font-size: 1.25rem;
@@ -35,7 +35,7 @@ const InvestSection = styled.section`
       color: white;
       z-index: 2;
       &:hover {
-        background-color: #307ec3;
+        background-color: #005dd0;
       }
       &:hover + .zeniImg {
         left: 160px;

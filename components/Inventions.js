@@ -5,7 +5,7 @@ export default function Inventions() {
     <ProjectsSection>
       <h1 id="inventions" className="sectionTitle">💡 Our inventions 🚀</h1>
 
-      <div className="allInventions firstInvention">
+      <div className="allInventions firstInvention" tabIndex="0">
         <div className="inventionDescr">
           <h2>Hoi-Poi Capsules</h2>
           <p>Legendary Hoi-Poi Capsules made a revolution back in the days, especially for travelling industry. People can store almost everything in them - from favourite meal 🍜 to a real house 🏠!</p>
@@ -15,7 +15,7 @@ export default function Inventions() {
         </div>
       </div>
 
-      <div className="allInventions secondInvention">
+      <div className="allInventions secondInvention" tabIndex="0">
         <div className="inventionImgWrapper">
           <img src="/img/spaceship.png" alt="spaceship" loading="lazy" />
         </div>
@@ -25,7 +25,7 @@ export default function Inventions() {
         </div>
       </div>
 
-      <div className="allInventions thirdInvention">
+      <div className="allInventions thirdInvention" tabIndex="0">
         <div className="inventionDescr">
           <h2>Time Machine</h2>
           <p>Scientists have always been saying that time travel is impossible. Luckily scientists of Capsule Corp. are open to defy any laws of matter and time! Jorneys back and forth in timeline are avaliable to anyone for a reasonable price. No touching or interacting with anything allowed ☝️</p>
