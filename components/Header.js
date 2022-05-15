@@ -74,6 +74,7 @@ const StyledHeader = styled.header`
       color: white;
       font-weight: bold;
       display: block;
+      outline-offset: 20px;
       > span {
         position: relative;
         z-index: 2;

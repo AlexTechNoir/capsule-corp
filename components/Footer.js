@@ -66,25 +66,25 @@ export default function Footer() {
         <div className="socialNetworks">
           <Link href="https://www.facebook.com/DragonBallZ/" passHref>
             <a>
-              <img src="/icons/facebook.svg" alt="facebook" width="32" />
+              <img src="/icons/facebook.svg" alt="facebook" width="32" height="32" />
               <span>Facebook</span>
             </a>
           </Link>
           <Link href="https://twitter.com/dragonballz" passHref>
             <a className="twitter">
-              <img src="/icons/twitter.svg" alt="twitter" width="32" />
+              <img src="/icons/twitter.svg" alt="twitter" width="32" height="32" />
               <span>Twitter</span>
             </a>
           </Link>
           <Link href="https://www.instagram.com/official.dragonballz/" passHref>
             <a>
-              <img src="/icons/instagram.svg" alt="instagram" width="32" />
+              <img src="/icons/instagram.svg" alt="instagram" width="32" height="32" />
               <span>Instagram</span>
             </a>
           </Link>
           <Link href="/" passHref>
             <a className="productHunt">
-              <img src="/icons/product-hunt.svg" alt="product hunt" width="32" />
+              <img src="/icons/product-hunt.svg" alt="product hunt" width="32" height="32" />
               <span>Product Hunt</span>
             </a>
           </Link>

@@ -8,37 +8,97 @@ export default function Team() {
         <div className="teamMember" tabIndex="0">
           <h2>Dr. Brief</h2>
           <h3>President of Capsule Corp.</h3>
-          <img src="/img/dr-brief.jpg" alt="doctor brief" width="200" loading="lazy" />
+          <picture>
+            <source
+              src="/img/dr-brief.webp"
+              type="image/webp"
+            />
+            <source
+              src="/img/dr-brief.jpg"
+              type="image/jpeg"
+            />
+            <img src="/img/dr-brief.webp" alt="doctor brief" width="200" loading="lazy" />
+          </picture>
           <p>&#34;My inventions are my babies!&#34;</p>
         </div>
         <div className="teamMember" tabIndex="0">
           <h2>Bulma Leigh</h2>
           <h3>Chief Technical Officer</h3>
-          <img src="/img/bulma.jpg" alt="bulma" width="200" loading="lazy" />
+          <picture>
+            <source
+              src="/img/bulma.webp"
+              type="image/webp"
+            />
+            <source
+              src="/img/bulma.jpg"
+              type="image/jpeg"
+            />
+            <img src="/img/bulma.webp" alt="bulma" width="200" loading="lazy" />
+          </picture>
           <p>&#34;I&prime;ve been inventing since my teens!&#34;</p>
         </div>
         <div className="teamMember" tabIndex="0">
           <h2>Trunks</h2>
           <h3>Test Volunteer</h3>
-          <img src="/img/trunks.jpg" alt="trunks" width="200" loading="lazy" />
+          <picture>
+            <source
+              src="/img/trunks.webp"
+              type="image/webp"
+            />
+            <source
+              src="/img/trunks.jpg"
+              type="image/jpeg"
+            />
+            <img src="/img/trunks.webp" alt="trunks" width="200" loading="lazy" />
+          </picture>
           <p>&#34;You won&prime;t believe the places and times I&prime;ve been in!&#34;</p>
         </div>
         <div className="teamMember" tabIndex="0">
           <h2>Ms. Staff</h2>
           <h3>Secretary</h3>
-          <img src="/img/staff.jpg" alt="staff" width="200" loading="lazy" />
+          <picture>
+            <source
+              src="/img/staff.webp"
+              type="image/webp"
+            />
+            <source
+              src="/img/staff.jpg"
+              type="image/jpeg"
+            />
+            <img src="/img/staff.webp" alt="staff" width="200" loading="lazy" />
+          </picture>
           <p>&#34;Call us even from a different timeline!&#34;</p>
         </div>
         <div className="teamMember" tabIndex="0">
           <h2>Bikini</h2>
           <h3>Drink Service</h3>
-          <img src="/img/bikini.jpg" alt="bikini" width="200" loading="lazy" />
+          <picture>
+            <source
+              src="/img/bikini.webp"
+              type="image/webp"
+            />
+            <source
+              src="/img/bikini.jpg"
+              type="image/jpeg"
+            />
+            <img src="/img/bikini.webp" alt="bikini" width="200" loading="lazy" />
+          </picture>
           <p>&#34;You wanna lemon in your tea, dear?&#34;</p>
         </div>
         <div className="teamMember" tabIndex="0">
           <h2>Vegeta</h2>
           <h3>Chief Security Officer</h3>
-          <img src="/img/vegeta.jpg" alt="vegeta" width="200" loading="lazy" />
+          <picture>
+            <source
+              src="/img/vegeta.webp"
+              type="image/webp"
+            />
+            <source
+              src="/img/vegeta.jpg"
+              type="image/jpeg"
+            />
+            <img src="/img/vegeta.webp" alt="vegeta" width="200" loading="lazy" />
+          </picture>
           <p>&#34;I haven&prime;t signed up for this!&#34;</p>
         </div>
       </div>
@@ -69,7 +129,7 @@ const StaffSection = styled.section`
       > h3 {
         margin-top: 0;
       }
-      > img {
+      > picture > img {
         border-radius: 50%;
       }
       > p {
