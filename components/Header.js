@@ -7,7 +7,7 @@ export default function Header() {
     <StyledHeader>
       <Link href="/" passHref>
         <a>
-          <img src="/logo-200.png" alt="capsule corporation logo" />
+          <img src="/logo.png" alt="capsule corporation logo" />
         </a>
       </Link>
       <nav>
