@@ -10,26 +10,20 @@ export default function Hero() {
   },[])
 
   return (
-    <HeroSection>
-      {
-        !areElementsHidden ? (
-          <>
-            <div>
-              <div>
-                Capsules!
-              </div>
-              <div>
-                Space!
-              </div> 
-              <div>
-                Time travel!
-              </div>
-            </div>
-            <hr />
-            <div>We stand on the edge of science</div>
-          </>
-        ) : null
-      }
+    <HeroSection areElementsHidden={areElementsHidden}>
+      <div className="headings">
+        <div>
+          Capsules!
+        </div>
+        <div>
+          Space!
+        </div> 
+        <div>
+          Time travel!
+        </div>
+      </div>
+      <hr />
+      <div className="bottomText">We stand on the edge of science</div>
       <div className="buttons">
         <div className="firstButtonWrapper">
           <button>Invest now!</button>
@@ -139,7 +133,8 @@ const fadeAndSlideDown = keyframes`
 const HeroSection = styled.section`
   grid-area: 1 / 2 / 2 / 3;
   font-weight: 600;
-  > :first-child {
+  > .headings {
+    visibility: ${props => props.areElementsHidden ? 'hidden' : 'visible'};
     font-size: 6rem;
     padding-left: 16px;
     > :first-child {
@@ -153,12 +148,14 @@ const HeroSection = styled.section`
     }
   }
   > hr {
+    visibility: ${props => props.areElementsHidden ? 'hidden' : 'visible'};
     border: 0;
     border-top: 2px solid #373737;
     margin: 1em 0 1em 1em;
     animation: ${stretchTo50} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
   }
-  > :nth-child(3) {
+  > .bottomText {
+    visibility: ${props => props.areElementsHidden ? 'hidden' : 'visible'};
     font-size: 1.5rem;
     margin-bottom: 1em;
     animation: ${fadeAndSlideDown} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
@@ -218,7 +215,7 @@ const HeroSection = styled.section`
   }
 
   @media only screen and (max-width: 1102px) {
-    > :first-child {
+    > .headings {
       font-size: 5rem;
     }
     > hr {
@@ -227,13 +224,13 @@ const HeroSection = styled.section`
   }
 
   @media only screen and (max-width: 1024px) {
-    > :first-child {
+    > .headings {
       font-size: 4rem;
     }
     > hr {
       animation: ${stretchTo35} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
     }
-    > :nth-child(3) {
+    > .bottomText {
       font-size: 1.25rem;
     }
     > .buttons > div > button {
@@ -268,7 +265,7 @@ const HeroSection = styled.section`
   }
 
   @media only screen and (max-width: 938px) {
-    > :first-child {
+    > .headings {
       font-size: 3rem;
     }
     > hr {
@@ -326,7 +323,7 @@ const HeroSection = styled.section`
     > hr {
       animation: ${stretchTo85} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
     }
-    > :nth-child(3) {
+    > .bottomText {
       font-size: 1.2rem;
     }
   }
