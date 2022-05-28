@@ -22,7 +22,7 @@ export default function Team() {
           <p>&#34;My inventions are my babies!&#34;</p>
         </div>
         <div className="teamMember" tabIndex="0">
-          <h2>Bulma Leigh</h2>
+          <h2>Bulma</h2>
           <h3>Chief Technical Officer</h3>
           <picture>
             <source
