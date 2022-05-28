@@ -1,16 +1,9 @@
 import styled from '@emotion/styled'
 import { keyframes } from '@emotion/react'
-import { useEffect, useState } from 'react'
 
 export default function Hero() {
-  const [ areElementsHidden, setAreElementsHidden ] = useState(true)
-
-  useEffect(() => {
-    setAreElementsHidden(false)
-  },[])
-
   return (
-    <HeroSection areElementsHidden={areElementsHidden}>
+    <HeroSection>
       <div className="headings">
         <div>
           Capsules!
@@ -134,31 +127,28 @@ const HeroSection = styled.section`
   grid-area: 1 / 2 / 2 / 3;
   font-weight: 600;
   > .headings {
-    visibility: ${props => props.areElementsHidden ? 'hidden' : 'visible'};
     font-size: 6rem;
     padding-left: 16px;
     > :first-child {
-      animation: ${slideRight} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: ${slideRight} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
     }
     > :nth-child(2) {
-      animation: ${slideRight} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .5s both;
+      animation: ${slideRight} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
     }
     > :nth-child(3) {
-      animation: ${slideRight} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+      animation: ${slideRight} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
     }
   }
   > hr {
-    visibility: ${props => props.areElementsHidden ? 'hidden' : 'visible'};
     border: 0;
     border-top: 2px solid #373737;
     margin: 1em 0 1em 1em;
-    animation: ${stretchTo50} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+    animation: ${stretchTo50} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
   }
   > .bottomText {
-    visibility: ${props => props.areElementsHidden ? 'hidden' : 'visible'};
     font-size: 1.5rem;
     margin-bottom: 1em;
-    animation: ${fadeAndSlideDown} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+    animation: ${fadeAndSlideDown} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 4s both;
     padding-left: 16px;
   }
   > .buttons {
